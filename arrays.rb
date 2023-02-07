@@ -44,12 +44,24 @@ end
 #this will turn up true and the if statement will print and this 
 #elvis costello classic will come to life
 
-# pushy = gpas.push(3.5, 4.0)
+gpas.push(3.5, 4.0)
 
-# if gpas.pop == gpas[-1]
-#     puts "Those are some good numbers"
-# elsif pushy[-1] == 4.0
-#     puts "That's also a good number"
-# else 
-#     puts "meh"
-# end
+mor_gpas = [3.2, 4.0, 2.19, 2.8, 3.5, 4.0]
+
+if gpas[-1]== 3.0   
+    puts "Those are some good numbers"
+elsif mor_gpas.shift(2) == gpas[0..1]
+    puts "That's also a good number"
+else 
+    puts "meh"
+end
+
+#i'm using .push to add the two floats at the end of gpas
+#then declaring a new variable with the same floats
+
+# the first if statement is checking if the last index is equal to 3.0 which is false
+# the elsif is using the .shift function which returns the first two indices 
+# of the arrray and comparing it to the first two indices of gpas by using the 
+# .. to return the first two indices 
+# i checked the first if with a condition of 4.0 which is the -1 index in gpas
+# i used 3.0 in the final run so that i could check if the second conditional was met
